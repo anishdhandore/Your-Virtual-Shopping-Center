@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path
 from shop import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path("", views.index, name="index"),
@@ -10,4 +12,4 @@ urlpatterns = [
     path("products/", views.products, name="products"),
     path("tracker/", views.tracker, name="tracker"),
     path("checkout/", views.checkout, name="checkout"),
-]
+] 
